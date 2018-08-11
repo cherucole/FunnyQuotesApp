@@ -4,18 +4,18 @@ import {FormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { GoalComponent } from './goal/goal.component';
-import { GoalDetailsComponent } from './goal-details/goal-details.component';
+import { QuoteComponent } from './quote/quote.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { DateCountPipe } from './date-count.pipe';
-import { GoalFormComponent } from './goal-form/goal-form.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoalComponent,
-    GoalDetailsComponent,
+    QuoteComponent,
+    QuoteDetailsComponent,
     DateCountPipe,
-    GoalFormComponent
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
