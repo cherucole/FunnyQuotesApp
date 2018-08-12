@@ -26,8 +26,8 @@ by Cherucole
             <div *ngFor='let quote of quotes;let i = index'>
               <h6 id="{{i}}">{{quote.name}}</h6>
 
-
               <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+              <br>
               <br>
 
             </div>
