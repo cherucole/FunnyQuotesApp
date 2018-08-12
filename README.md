@@ -12,7 +12,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You will need to: Have a web browser (Google chrome is highly prefrable).
+You will need to:
+* Have Angular-cli & Node-js installed
+* Have a web browser (Google chrome is highly preferable).
+* Any text editor 
+
 ### Installing
 
  * Go to Github.com
