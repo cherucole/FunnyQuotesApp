@@ -11,12 +11,12 @@
 
         </div>
       </div>
-      <!-- Description Input -->
+      <!-- Quote Input -->
       <div class="form-group">
         <label for="description">Your Quote</label>
         <textarea style="width:180%;" class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
         <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-          <p> Description is Required</p>
+          <p> Quote is Required</p>
 
         </div>
 
@@ -26,7 +26,7 @@
         <label for="complete">Submission Date</label>
         <input style="width:180%;" type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
         <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-          <p> Complete Date is Required</p>
+          <p> Submission Date</p>
 
         </div>
       </div>
