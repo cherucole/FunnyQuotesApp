@@ -8,11 +8,9 @@ import {Quote} from '../quote'
 })export class QuoteComponent implements OnInit {
   quotes = [
       new Quote(1,'Jerry Seinfield','If a book about failures doesn’t sell, is it a success?',new Date(2018,3,14) ),
-      new Quote(2,'Buy Cookies','I have to buy cookies for the parrot',new Date(2018,6,9) ),
-      new Quote(3, 'Get new Phone Case','Diana has her birthday coming up soon',new Date(2018,1,12) ),
-      // new Quote(4, 'Get Dog Food','Pupper likes expensive sancks',new Date(2018,0,18) ),
-      // new Quote(5, 'Solve math homework','Damn Math',new Date(2018,2,14) ),
-      // new Quote(6, 'Plot my world domination plan','Cause I am an evil overlord',new Date(2018,3,14) ),
+      new Quote(2,'Lily Tomlin','I always wanted to be somebody, but now I realize I should have been more specific',new Date(2018,6,9) ),
+      new Quote(3, 'Cathy Guisewite','When life gives you lemons, squirt someone in the eye',new Date(2018,1,12) ),
+    
 
   ]
 

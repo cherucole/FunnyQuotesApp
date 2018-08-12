@@ -7,7 +7,7 @@
   <div class="card-body">
     <div class="container row">
       <div *ngFor='let quote of quotes;let i = index'>
-        <h5  id="{{i}}">{{quote.name}}</h5>
+        <h6  id="{{i}}">{{quote.name}}</h6>
 
 
           <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
