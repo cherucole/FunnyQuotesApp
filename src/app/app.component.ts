@@ -7,4 +7,6 @@ import {Quote} from './quote'
 })
 export class AppComponent {
 
+
+
 }
