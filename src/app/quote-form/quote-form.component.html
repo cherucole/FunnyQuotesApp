@@ -1,10 +1,9 @@
 <div class="container-fluid">
-  <h1>Add Yours Also!</h1>
     <div class="row">
       <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
             <!-- Name Form -->
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Your Name</label>
                 <input style="width:180%;" type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
 
                 <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -14,7 +13,7 @@
             </div>
             <!-- Description Input -->
             <div class="form-group">
-                <label for="description">Description</label>
+                <label for="description">Your Quote</label>
                 <textarea style="width:180%;" class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
                 <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                     <p> Description is Required</p>
@@ -24,7 +23,7 @@
             </div>
             <!-- Date Input -->
             <div class="form-group">
-                <label for="complete">Completion</label>
+                <label for="complete">Submission Date</label>
                 <input style="width:180%;" type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required >
                 <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                     <p> Complete Date is Required</p>
