@@ -1,12 +1,5 @@
 <h2 style="text-align:center;">User Posts</h2>
 <div class="container-fluid">
-
-    <!-- <div class="row"> -->
-      <!-- <div class="col-md-6">
-
-          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-      </div> -->
-
 <hr>
 <div class="col-md-6">
 
@@ -14,9 +7,8 @@
   <div class="card-body">
     <div class="container row">
       <div *ngFor='let quote of quotes;let i = index'>
-        <h5  id="{{i}}">{{quote.name}} due on {{quote.completeDate|date}}</h5>
+        <h5  id="{{i}}">{{quote.name}}</h5>
 
-          <!-- <button  (click)='toogleDetails(i)'>Toogle Details</button> -->
 
           <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
           <br>
