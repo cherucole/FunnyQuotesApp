@@ -10,7 +10,7 @@ import {Quote} from '../quote'
       new Quote(1,'Jerry Seinfield','If a book about failures doesn’t sell, is it a success?',new Date(2018,3,14) ),
       new Quote(2,'Lily Tomlin','I always wanted to be somebody, but now I realize I should have been more specific',new Date(2018,6,9) ),
       new Quote(3, 'Cathy Guisewite','When life gives you lemons, squirt someone in the eye',new Date(2018,1,12) ),
-    
+
 
   ]
 
@@ -36,11 +36,11 @@ import {Quote} from '../quote'
             }
         }
     }
-    addNewQuote(quote){
-        let quoteLength = this.quotes.length;
-        quote.id=quoteLength+1;
-        quote.completeDate = new Date(quote.completeDate)
-        this.quotes.push(quote)
+addNewQuote(quote){
+  let quoteLength = this.quotes.length;
+  quote.id = quoteLength + 1;
+  quote.completeDate = new Date(quote.completeDate)
+  this.quotes.push(quote)
 
-    }
+}
 }
