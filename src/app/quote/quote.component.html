@@ -2,12 +2,12 @@
 
   <div class="row">
     <div class="col-md-6">
-      <h2>Add yours Also!!</h2>
+      <h2 style="color:#0d47a1;">Add yours Also!!</h2>
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       <br>
       <br>
       <br>
-<h6>Moringa School Independent Project
+<h6 style="font-style:italic;">Moringa School Independent Project
 <br>
 Angular Framework
 <br>
@@ -17,14 +17,14 @@ by Cherucole
     </div>
 
     <div class="col-md-6">
-      <h2>User Posts</h2>
+      <h2 style="color:#0d47a1;">User Posts</h2>
       <hr>
 
       <div class="card" style="width: 28rem;">
         <div class="card-body">
           <div class="container row">
             <div *ngFor='let quote of quotes;let i = index'>
-              <h6 id="{{i}}">{{quote.name}}</h6>
+              <h6 style="color:#4B515D;" id="{{i}}">{{quote.name}}</h6>
 
               <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
               <br>
